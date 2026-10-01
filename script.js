@@ -102,6 +102,28 @@ function algoritmoEstruturado() {
      const valor = valores[chave];
      console.log(`Chaves do objeto ${valor}`);
 
-  }
+     if (valor === 0) {
+      break;
+     }
+ quantidade++
+ soma += valor
+
+ if (valor % 2 === 0) {
+    pares++;
+    somaPares += valor;
+ } else {
+    impares++;
+    somaImpares += valor;
+ }
+
+ let mediaPares = somaPares / quantidade;
+ let mediaGeral = soma / quantidade;
+
+ console.log(`Quantidade de pares ${pares}`);
+ console.log(`Quantidade de impares ${impares}`);
+ console.log(`Média dos pares ${mediaPares}`);
+  console.log(`Média geral ${mediaGeral}`);
+   console.log(``)
+    console.log(``)
 
 }
